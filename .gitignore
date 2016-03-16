@@ -1,0 +1,11 @@
+.gradle/
+.idea/
+warFiles/
+build/
+.settings
+src/main/resources/config.properties
+src/main/webapp/www/fotos
+WebContent/www/fotos
+WebContent/platforms
+WebContent/.bowerrc
+src/main/webapp/.bowerrc
