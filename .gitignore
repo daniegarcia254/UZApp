@@ -8,5 +8,6 @@ src/main/resources/config.properties
 src/main/webapp/www/fotos
 WebContent/www/fotos
 WebContent/platforms
+WebContent/node_modules/
 WebContent/.bowerrc
 src/main/webapp/.bowerrc
