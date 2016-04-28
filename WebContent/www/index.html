@@ -5,13 +5,12 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>UZapp</title>
     <link rel="shortcut icon" href="images/favicon.ico"/>
-    <!-- stylesheets -->
-    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <!-- <link href="leaflet/leaflet.css" rel="stylesheet">     IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
 
-     <link href="css/ionic.app.css" rel="stylesheet">
-     -->
+    <!-- Work stylesheets with SASS -->
+    <link href="leaflet/leaflet.css" rel="stylesheet">
+    <link href="css/ionic.app.css" rel="stylesheet">
+    <link href="scss/ionic.app.scss" rel="stylesheet">
+
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
@@ -53,7 +52,6 @@
     <link rel="stylesheet" href="lib/leaflet-search.mobile.src.css" >
     <link rel="stylesheet" href="lib/leaflet-search.src.css" />
     <script src="lib/leaflet-search.src.js" ></script>
-
 </head>
 <body ng-app="starter" ng-controller="TranslationCtrl">
 <ion-nav-view ></ion-nav-view>
