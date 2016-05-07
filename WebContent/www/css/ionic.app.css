@@ -9259,14 +9259,55 @@ img[usemap] {
 .my-popup .popup-body {
   height: 50px; }
 
-/* MODALES */
-/* MODAL AÑADIR POI */
-#add-poi-modal .item-select select {
-  font-size: 16px !important;
-  width: 200px; }
+#estancia-view .item-input {
+  white-space: normal !important;
+  font-weight: 500 !important; }
 
-#add-poi-modal .item-select option {
+#estancia-view .item-input input {
+  text-align: right !important; }
+
+#estancia-view input[disabled] {
+  background-color: transparent !important; }
+
+#estancia-view button.button-full {
+  width: 60% !important;
+  margin-left: 20% !important; }
+
+#search-view .item-select select {
+  font-size: 16px !important;
+  width: 200px !important; }
+
+#search-view .item-select option {
   font-size: 16px !important; }
 
-#add-poi-modal .input-label {
+#search-view .button.button-positive {
+  width: 60% !important;
+  margin-left: 20% !important; }
+
+/* IONIC MODALS FOR POINTS OF INTEREST */
+#add-poi-modal .item-select select, #edit-poi-modal .item-select select, #filter-poi-modal .item-select select {
+  font-size: 16px;
+  width: 200px; }
+
+#add-poi-modal .item-select option, #edit-poi-modal .item-select option, #filter-poi-modal .item-select option {
+  font-size: 16px; }
+
+#add-poi-modal .input-label, #edit-poi-modal .input-label, #filter-poi-modal .input-label {
   font-weight: 500; }
+
+#add-poi-modal .item-input input, #edit-poi-modal .item-input input, #filter-poi-modal .item-input input {
+  font-size: 16px !important;
+  text-align: right !important; }
+
+#add-poi-modal textarea, #edit-poi-modal textarea, #filter-poi-modal textarea {
+  height: 100px !important;
+  font-size: 16px !important;
+  text-align: right !important; }
+
+#add-poi-modal .item-input textarea, #edit-poi-modal .item-input textarea, #filter-poi-modal .item-input textarea {
+  width: 60% !important; }
+
+#edit-poi-modal button.button-full {
+  width: 40%;
+  float: left;
+  margin: 10px; }

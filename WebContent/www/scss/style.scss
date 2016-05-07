@@ -187,20 +187,3 @@ img[usemap] {
 .my-popup .popup-body {
   height: 50px;
 }
-
-
-/* MODALES */
-
-/* MODAL AÑADIR POI */
-#add-poi-modal {
-  .item-select select {
-    font-size: 16px !important;
-    width: 200px;
-  }
-  .item-select option {
-    font-size: 16px !important;
-  }
-  .input-label {
-    font-weight: 500;
-  }
-}
