@@ -13,7 +13,6 @@
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
-
     <script data-require="angular-resource@1.2.14" data-semver="1.2.14" src="http://code.angularjs.org/1.2.14/angular-resource.js"></script>
 
     <!-- leaflet library-->
@@ -26,22 +25,41 @@
 
     <!-- cordova script (this will be a 404 during development) -->
     <!--<script src="cordova.js"></script>-->
-    <!-- your app's js -->
-    <script src="js/factories.js"></script>
+
     <script src="lib/angular-translate.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
     <script src="http://code.jquery.com/jquery-2.1.3.js"></script>
     <script src="lib/jquery.rwdImageMaps.min.js"></script>
 
+    <script src="http://maps.google.com/maps/api/js?v=3&sensor=false"></script>
+    <script src="leaflet-plugins-master/layer/tile/Google.js"></script>
+    <script src="js/L.TileLayer.BetterWMS.js"></script>
+
+    <!-- My app's js files -->
     <script src="lib/angularSlideables.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/constants.js"></script>
+    <script src="js/directives/fancySelect.js"></script>
+    <script src="js/services/sharedProperties.js"></script>
+    <script src="js/services/geoService.js"></script>
+    <script src="js/services/translationService.js"></script>
+    <script src="js/factories/infoServiceFactory.js"></script>
+    <script src="js/controllers/topController.js"></script>
+    <script src="js/controllers/translateController.js"></script>
+    <script src="js/controllers/mapController.js"></script>
+    <script src="js/controllers/planController.js"></script>
+    <script src="js/controllers/estanciaController.js"></script>
+    <script src="js/controllers/photosController.js"></script>
+    <script src="js/controllers/searchController.js"></script>
+    <script src="js/controllers/appController.js"></script>
+
+    <!--
     <script src="js/controllers.js"></script>
+    <script src="js/factories.js"></script>
     <script src="js/services.js"></script>
     <script src="js/directives.js"></script>
-    <script src="js/angularTranslateService.js"></script>
-    <script src="http://maps.google.com/maps/api/js?v=3&sensor=false"></script>
-    <script src="leaflet-plugins-master\layer\tile\Google.js"></script>
-    <script src="js/L.TileLayer.BetterWMS.js"></script>
+    <script src="js/angularTranslateService.js"></script>-->
+
 
     <!-- Librerias para geolocalizar al usuario-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" >
@@ -53,9 +71,11 @@
     <link rel="stylesheet" href="lib/leaflet-search.src.css" />
     <script src="lib/leaflet-search.src.js" ></script>
 </head>
-<body ng-app="starter" ng-controller="TranslationCtrl">
-<ion-nav-view ></ion-nav-view>
+
+<body ng-app="UZCampusWebMapApp" ng-controller="TranslationCtrl">
+    <ion-nav-view ></ion-nav-view>
 </body>
+
 <script>
 /* Necesario hacerlo de esta manera ya que no se puede añadir codigo de angularJS dentro de un marcador de leaflet
 *  la posible alternativa era usar el plugin angular-leaflet-directive pero requeria cambiar toda la parte de leaflet
@@ -66,9 +86,10 @@
         localStorage.planta = planta.value;
         window.location = "#/app/plano";
     }
-        function informacionEstancia(estancia){//Selecciono un plano de la planta seleccionada.
-            console.log(estancia.value);
-            localStorage.estancia = estancia.value;
-            window.location = "#/app/estancia";
-}</script>
+    function informacionEstancia(estancia){//Selecciono un plano de la planta seleccionada.
+        console.log(estancia.value);
+        localStorage.estancia = estancia.value;
+        window.location = "#/app/estancia";
+    }
+</script>
 </html>
