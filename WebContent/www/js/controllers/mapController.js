@@ -34,7 +34,7 @@ UZCampusWebMapApp.controller('MapCtrl',function($scope, $rootScope, geoService, 
          });
      };*/
 
-    $ionicModal.fromTemplateUrl('templates/filterPOIs.html', {
+    /*$ionicModal.fromTemplateUrl('templates/filterPOIs.html', {
         scope: $scope,
         animation: 'slide-in-up'
     }).then(function(modal) {
@@ -77,5 +77,5 @@ UZCampusWebMapApp.controller('MapCtrl',function($scope, $rootScope, geoService, 
     $scope.createPOI = function(data) {
         console.log("Data", data);
         console.log("Create POI",$scope.data);
-    }
+    }*/
 });
