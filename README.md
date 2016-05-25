@@ -30,7 +30,7 @@ gradle run
 ```
 
 ## The web application side
-We will use the ***Ionic Framework with Sass*** feature in order to have a more comfortable development.
+We will use the ***Ionic Framework with Sass*** feature in order to have a more comfortable development. This must be done inside the folder [WebContent](WebContent/)
 
 First of all we have to setup Sass following the instructions on this link: [Ionic Framework - Using Sass](http://ionicframework.com/docs/cli/sass.html)
 
