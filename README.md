@@ -8,7 +8,7 @@ We will first install all the dependencies with the ***npm*** package manager:
 ```
 npm install
 ```
-In order to build && run the application we will use ***gradle***:
+In order to build *&&* run the application we will use ***gradle***:
 ```
 gradle build
 gradle run
@@ -34,7 +34,7 @@ We will use the ***Ionic Framework with Sass*** feature in order to have a more 
 
 First of all we have to setup Sass following the instructions on this link: [Ionic Framework - Using Sass](http://ionicframework.com/docs/cli/sass.html)
 
-Once this is done, we will use the following command that will watch for changes in our application and they will be applied immediately:
+Once this is done, we will use the following command that will watch for changes in our application. Those changes will be applied immediately:
 ```
 ionic serve
 ```
