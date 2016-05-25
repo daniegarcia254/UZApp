@@ -38,3 +38,6 @@ Once this is done, we will use the following command that will watch for changes
 ```
 ionic serve
 ```
+
+####Note:
+The project also include the configuration project files for use *&&* and run the application (server side mainly) with IntelliJ IDEA: [UZapp.iml](UZapp.iml) so we can use the ***gradle*** comands directly in our project.
